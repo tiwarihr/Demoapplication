@@ -1,0 +1,42 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="odatagatewayexample.Table" xmlns:html="http://vcerpecc.vcerp.com:8000/sap/opu/odata/sap/ZODATA_SRV">
+	<Page title="Title">
+		<content>
+	<Table id="myTable" items="{/UserSetSet}">
+
+                                  <columns>
+
+                                          <Column>
+
+                                                  <Label text="Email"></Label>
+
+                                          </Column>
+
+                                          <Column>
+
+                                                  <Label text="Age"></Label>
+
+                                          </Column>
+
+                                  </columns>
+
+                                  <items>
+
+                                          <ColumnListItem>
+
+                                                  <cells>
+
+                                                          <Text text="{Email}"></Text>
+
+                                                          <Text text="{Age}"></Text>
+
+                                                  </cells>
+
+                                          </ColumnListItem>
+
+                                  </items>
+
+                          </Table>
+		</content>
+	</Page>
+</core:View>
